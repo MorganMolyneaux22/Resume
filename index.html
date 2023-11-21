@@ -8,13 +8,33 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="bg-gray-100">
+
+    <!-- Right-Sided Navbar (hidden on screens smaller than 1024px) -->
+    <div class="hidden lg:flex flex-col justify-center items-center space-y-4 p-4 bg-white shadow-lg fixed top-0 right-0 h-screen">
+        <!-- Home Button -->
+        <button class="btn btn-primary" onclick="location.href='#home'">Home</button>
+        <!-- About Me Button -->
+        <button class="btn btn-primary" onclick="location.href='#about'">About Me</button>
+        <!-- Contact Button -->
+        <button class="btn btn-primary" onclick="location.href='#contact'">Contact</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="p-4 ml-64">
+        <!-- Your content here -->
+        <h1>hellow world</h1>
+    </div>
 
 
-    <div class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 lg:hidden">
+
+
+
+
+
+
+    <div
+        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 lg:hidden">
         <!-- Hide hud if screen is > 1024px -->
         <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
             <button type="button"
