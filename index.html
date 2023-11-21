@@ -1,5 +1,7 @@
 <!doctype html>
-<html data-theme="cupcake"></html>
+<html data-theme="cupcake">
+
+</html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,44 +10,38 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100">
+<body>
+    <div class="lg:hidden flex justify-center space-x-4 p-4" data-theme="sunset">
+        <!-- Social Media Icons (Visible on screens < 1024px) -->
+        <a href="https://www.linkedin.com/in/morgan-molyneaux-613618201/" target="_blank">
+            <img src="linkedin_svg.svg" alt="LinkedIn" class="h-6 w-6">
+        </a>
+        <a href="https://github.com/MorganMolyneaux22" target="_blank">
+            <img src="github_svg.svg" alt="GitHub" class="h-6 w-6">
+        </a>
+        <!-- End of social media icons -->
+    </div>
 
     <picture>
         <!-- Image for screens smaller than 1024px -->
-        <source media="(max-width: 1024px)" srcset="milling.jpg">
-        <!-- Default Image for larger screens -->
+        <source media="(max-width: 768px)" srcset="me.jpg">
 
         <img class="w-full h-64 object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-            src="milling_color.jpg"
-            alt="image description">
+            src="milling_color.jpg" alt="image description">
     </picture>
 
-    <!-- Right-Sided Navbar (hidden on screens smaller than 1024px) -->
-    <div
-        class="hidden lg:flex flex-col justify-center items-center space-y-4 p-4 bg-white shadow-lg fixed top-0 right-0 h-screen">
-        <!-- Home Button -->
+    <div class="hidden lg:flex flex-col justify-center items-center space-y-4 p-4 bg-white shadow-lg fixed top-0 right-0 h-screen"
+        data-theme="sunset">
+        <!-- Right-Sided Navbar (hidden on screens smaller than 1024px) -->
         <button class="btn btn-primary" onclick="href='index.html'">Home</button>
-        <!-- About Me Button -->
         <button class="btn btn-primary" onclick="location.href='#about'">About Me</button>
-        <!-- Contact Button -->
         <button class="btn btn-primary" onclick="location.href='#contact'">Contact</button>
+        <!-- End of right-sided navbar -->
     </div>
-
-    <!-- Main Content -->
-    <div class="p-4 ml-64">
-        <h1 data-theme="dark">CONTENT HERE</h1>
-    </div>
-
-
-
-
-
-
-
 
     <div
         class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 lg:hidden">
-        <!-- Hide hud if screen is > 1024px -->
+        <!-- Bottom hud on screen(s) smaller than 1024px in width-->
         <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
             <button type="button"
                 class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
@@ -81,7 +77,23 @@
                     class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Contact</span>
             </button>
         </div>
+        <!-- End of bottom hud -->
     </div>
+
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+            <img src="me.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+                <h1 class="text-5xl font-bold">- I'm Morgan Molyneaux</h1>
+                <h2 class="text-3xl font-bold"> Software Engineer</h2>
+                <p class="py-6">I am an aspiring Software Engineering student in my senior year at Utah Valley
+                    University.</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
     <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
