@@ -10,10 +10,21 @@
 
 <body class="bg-gray-100">
 
+    <picture>
+        <!-- Image for screens smaller than 1024px -->
+        <source media="(max-width: 1024px)" srcset="milling.jpg">
+        <!-- Default Image for larger screens -->
+
+        <img class="w-full h-64 object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="milling_color.jpg"
+            alt="image description">
+    </picture>
+
     <!-- Right-Sided Navbar (hidden on screens smaller than 1024px) -->
-    <div class="hidden lg:flex flex-col justify-center items-center space-y-4 p-4 bg-white shadow-lg fixed top-0 right-0 h-screen">
+    <div
+        class="hidden lg:flex flex-col justify-center items-center space-y-4 p-4 bg-white shadow-lg fixed top-0 right-0 h-screen">
         <!-- Home Button -->
-        <button class="btn btn-primary" onclick="location.href='#home'">Home</button>
+        <button class="btn btn-primary" onclick="href='index.html'">Home</button>
         <!-- About Me Button -->
         <button class="btn btn-primary" onclick="location.href='#about'">About Me</button>
         <!-- Contact Button -->
@@ -21,9 +32,8 @@
     </div>
 
     <!-- Main Content -->
-    <div class="p-4 ml-64">
-        <!-- Your content here -->
-        <h1>hellow world</h1>
+    <div class="p-4 ml-64 color-dark">
+        <h1>CONTENT HERE</h1>
     </div>
 
 
@@ -74,7 +84,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
 </body>
 
 </html>
