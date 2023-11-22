@@ -1,4 +1,7 @@
+
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   safelist: [
@@ -15,9 +18,11 @@ module.exports = {
     'leading-9',
     'shadow-lg'
   ],
-  
+
   theme: {
     extend: {},
   },
   plugins: [require('flowbite/plugin')],
+  
 }
+
